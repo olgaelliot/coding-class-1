@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "homepage": "",
     "description": "",
-    "author": "",
+    "author": "Olga",
     "main": "app.js",
     "dependencies": {
         "nodemon": "latest",

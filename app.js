@@ -1,0 +1,14 @@
+"name": "",
+"version": "0.0.1";
+"homepage": "";
+"description": "";
+"author": "Olga";
+"main": "app.js";
+"dependencies": {
+    "nodemon": "latest";
+    "express": "latest";
+    "request": "latest";
+    "cheerio": "latest";
+    var fs = require('fs');
+
+//storing port number

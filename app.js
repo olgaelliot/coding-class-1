@@ -13,9 +13,27 @@ var url = 'https://en.wikipedia.org/wiki/Osama_bin_Laden';
 
 //Making http request
 
-request(url), function(error, response, html) {
+request(url, function(error, response, html) {
+
   if(!error) {
-    res.send(html);
+    //res.send(html);
+
+    var $ = cheerio.load(html);
+    var data = {
+      articleTitle : '',
+      articleImg : '',
+      articleParagraph:''
+    };
+
+    $('#content').filter(function(){
+
+      data.articleTitle = $(this).find(#firstHeading).text();
+      data.articleImg = $(this).find('img').first().attr('src');
+
+    });
+
+res.send(data);
+
   }
 });
 
